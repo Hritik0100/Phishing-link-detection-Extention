@@ -2,14 +2,21 @@
   "manifest_version": 2,
   "name": "Phishing Detector",
   "version": "1.0.0",
-  "description": "Detect phishing websites",
-  "permissions": ["activeTab", "tabs"],
+  "description": "Detect phishing websites automatically",
+  "permissions": [
+    "activeTab", 
+    "tabs", 
+    "notifications", 
+    "storage",
+    "https://www.virustotal.com/*"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "assets/icons.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"],
+    "persistent": false
   },
 
   "content_scripts": [
