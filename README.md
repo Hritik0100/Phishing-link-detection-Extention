@@ -46,23 +46,6 @@
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-### 🎯 Main Interface
-![Main Interface](https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Phishing+Detector+UI)
-
-### 🛡️ Security Scan
-![Security Scan](https://via.placeholder.com/400x300/1a1a1a/48bb78?text=Safe+URL+Detected)
-
-### ⚠️ Threat Detection
-![Threat Detection](https://via.placeholder.com/400x300/1a1a1a/f56565?text=Phishing+Threat+Detected)
-
-</div>
-
----
-
 ## 🛠️ Installation
 
 ### **Method 1: Direct Installation (Recommended)**
@@ -136,7 +119,7 @@ const SCAN_SETTINGS = {
 ```
 Phishing-link-detection-Extention/
 ├── 📄 manifest.json          # Extension configuration
-├── 🎨 popup.html             # Main UI interface (30%)
+├── 🎨 popup.html             # Main UI interface
 ├── ⚡ popup.js               # UI logic and interactions
 ├── 🔧 background.js          # Background service worker
 ├── 📜 content_script.js      # Content script for page interaction
@@ -146,8 +129,9 @@ Phishing-link-detection-Extention/
 ```
 
 ### **Technology Stack**
-- **70% JavaScript** - Core functionality and logic
-- **30% HTML/CSS** - User interface and styling
+- **JavaScript** - Core functionality and logic
+- **HTML** - User interface structure
+- **CSS** - Styling and animations
 - **VirusTotal API** - Threat intelligence
 - **Chrome Extensions API** - Browser integration
 
